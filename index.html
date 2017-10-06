@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,6 +14,12 @@
     <header class="container-fluid header">
         <div class="container">
             <a href="#" class="logo">Mon Site</a>
+            <div class="contact_container hidden-xs hidden-sm">
+                <p>
+                    <span>Besoin d'assistance ?</span><br>
+                    <a href="tel:01234567" id="contact_tel" title="Contactez-nous"><i class="uk-icon-phone"></i><span>01 23 45 67 89</span></a>
+                </p>
+            </div>
             <nav class="menu">
                 <a href="#">Accueil</a> |
                 <a href="#">Nos offres</a> |
@@ -24,27 +31,28 @@
     <!--MARK HERO BANNER-->
     <section class="container-fluid banner">
         <div class="container inner-banner">
-            <form action="">
-                <input type="text" id="dateArrival" placeholder="Date d'arrivée">
-                <input type="text" id="dateDepart" placeholder="Date de départ">
-                <div class='col-sm-6'>
-                    <div class="form-group">
-                        <div class='input-group date' id='datetimepicker1'>
-                            <input type='text' class="form-control" />
-                            <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
+            <form action="" class="">
+                <div class="form-group">
+                    <label class="sr-only" for="depart">Date de départ</label>
+                    <label class="sr-only" for="arrivee">Date d'arrivée</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <input type="text" class="form-control" id="depart" placeholder="Adresse de départ">
+                        </div>
+                        <div class="input-group-addon">
+                            <input type="text" class="form-control" id="arrivee" placeholder="Adresse d'arrivée">
                         </div>
                     </div>
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
                 </div>
-                <script type="text/javascript">
-                    $(function () {
-                        $('#datetimepicker1').datetimepicker();
-                    });
-                </script>
-        </div>
-                <button class="btn btn-custom">Je déménage</button>
             </form>
+        </div>
+        <button class="btn btn-custom">Je déménage</button>
         </div>
     </section>
     <!--MARK COMMENT CA MARCHE-->
@@ -59,7 +67,8 @@
         </div>
         <div class="row">
             <div class="col-md-4 col-lg-4 col-xs-12">
-                <p class="funcTextRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic impedit ipsa natus nobis porro praesentium quae quisquam veritatis voluptates.</p>
+                <p class="funcTextRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic impedit ipsa
+                    natus nobis porro praesentium quae quisquam veritatis voluptates.</p>
             </div>
             <div class="col-md-8 col-lg-8 col-xs-12">
                 <img src="" alt="" class="funcImageLeft">
@@ -70,20 +79,34 @@
                 <img src="" alt="" class="funcImageRight">
             </div>
             <div class="col-md-8 col-lg-8 col-xs-12">
-                <p class="funcTextLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ea esse libero officiis rerum voluptates.</p>
+                <p class="funcTextLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ea esse libero
+                    officiis rerum voluptates.</p>
             </div>
         </div>
     </section>
     <!--MARK PK NOUS-->
     <section class="container-fluid usp">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
         <div class="col-md-4 col-lg-4 col-xs-12"></div>
         <div class="col-md-4 col-lg-4 col-xs-12"></div>
         <div class="col-md-4 col-lg-4 col-xs-12"></div>
     </section>
     <!--MARK FOOTER-->
-    <section class="container-fluid footer">
+    <footer class="container-fluid footer">
 
-    </section>
+    </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
+
 
 </body>
 </html>
