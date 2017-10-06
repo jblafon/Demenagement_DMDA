@@ -56,6 +56,9 @@ MARK GENERAL
     width: 100%;
     max-width: 100%;
     min-height: 100px;
+    text-align: center;
+    line-height: 100px; !important;
+    vertical-align: middle;
 }
 
 hr.separator1 {
@@ -132,6 +135,30 @@ MARK BANNER
 .btn-custom:hover {
     background-color: #2C3F51;
     color: white;
+}
+
+.footcol{
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.footerA {
+    text-decoration: none;
+    color: white;
+}
+
+.footerA:hover {
+    text-decoration: none;
+    color: #18BC9C;
+}
+
+.soccol {
+    line-height: 130px;
+}
+
+.imghover:hover {
+    width: 150px;
+    height: 150px;
 }
 
 /*********
