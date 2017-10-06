@@ -1,0 +1,272 @@
+/*********
+MARK RESET
+**********/
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+/*********
+MARK GENERAL
+**********/
+
+.header {
+    background-color: #2C3F51;
+    width: 100%;
+    max-width: 100%;
+}
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.function {
+    background-color: #18BC9C;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
+
+.usp {
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer {
+    background-color: #2C3F51;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    text-align: center;
+    line-height: 100px;
+!important;
+    vertical-align: middle;
+}
+
+hr.separator1 {
+    height: 3px;
+    width: 5%;
+    border: none;
+    box-shadow: none;
+    background-color: #b1b1b1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+hr.separator2 {
+    height: 3px;
+    width: 5%;
+    border: none;
+    box-shadow: none;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*********
+MARK HEADER
+**********/
+
+.logoSite {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px !important;
+}
+
+.navbar-custom {
+    padding: 0 20px;
+}
+
+.navbar-nav-custom {
+    float: right;
+}
+
+.menu {
+    float: right;
+    color: orange;
+}
+
+.contact_container {
+    float: left;
+    line-height: 1;
+}
+
+/*********
+MARK BANNER
+**********/
+
+.banner {
+    background: cornflowerblue url("https://drscdn.500px.org/photo/206806775/q%3D80_m%3D2000_k%3D1/v2?webp=true&sig=e0386cc0ce9ad0054e6264b711ded6efff52e3be5e8b7c984bd278c78391e6ff") center center no-repeat;
+    height: 700px;
+    text-align: center;
+}
+
+.formAccueil {
+    margin-top: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.btn-custom {
+    background-color: #18BC9C;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #2C3F51;
+    color: white;
+}
+
+.footcol {
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.footerA {
+    text-decoration: none;
+    color: white;
+}
+
+.footerA:hover {
+    text-decoration: none;
+    color: #18BC9C;
+}
+
+.soccol {
+    line-height: 130px;
+}
+
+.imghover:hover {
+    width: 150px;
+    height: 150px;
+}
+
+/*********
+MARK NOS OFFRES
+**********/
+
+.section1 {
+    text-align: center;
+}
+
+.section2 {
+    text-align: center;
+}
+
+.section3 {
+    text-align: center;
+
+}
+
+.image {
+    background: no-repeat center top;
+    background-size: cover;
+    height: 250px;
+    width: 350px;
+    white-space: nowrap;
+}
+
+.cadre {
+    padding: 3%;
+}
+
+ul {
+    text-align: center;
+}
+
+.liste {
+    text-align: left;
+}
+
+#title-v2 {
+    margin-top: 70px;
+}
+
+/*********
+MARK ABOUT
+**********/
+
+.about {
+    margin-top: 70px;
+}
+
+.bordureJaune {
+    border: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.section1, .section2, .section3 {
+    min-height: 100px;
+    padding-bottom: 30px;
+}
+
+.histoire {
+    text-align: center;
+    /*padding-bottom: 0;*/
+}
+
+.inner-cont {
+    text-align: center;
+}
+
+.valeur {
+    padding-top: 0;
+}
+
+.recrute {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+/*********
+MARK MENTIONS LEGALES
+**********/
+
+.mentionsleg h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+/*********
+MARK MEDIAQUERIES
+**********/
+
+@media screen and (max-width: 768px) {
+    .navbar-nav-custom {
+        float: left;
+        /*width: 100%;*/
+        text-align: center;
+    }
+
+    .formAccueil {
+        margin-top: 70%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 5px;
+    }
+}
+
+
+

@@ -1,0 +1,37 @@
+
+.section1 {
+    text-align: center;
+}
+
+.section2 {
+    text-align: center;
+}
+
+.section3 {
+    text-align: center;
+
+}
+
+.image {
+    background: no-repeat center top;
+    background-size: cover;
+    height: 250px;
+    width: 350px;
+    white-space: nowrap;
+}
+
+.cadre {
+    padding: 3%;
+}
+
+ul {
+    text-align: center;
+}
+
+.liste {
+    text-align: left;
+}
+
+#title-v2 {
+    margin-top: 70px;
+}

@@ -1,25 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <title>Gros Cartons</title>
     <meta charset="UTF-8">
+    <title>Les Gros Bras</title>
+    <meta name="description" content="Un service génial de déménagement !">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/freelancer.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--MARK HEADER-->
     <header class="container-fluid header">
-        <div class="container">
-            <a href="#" class="logo">Mon Site</a>
-            <nav class="menu">
-                <a href="#">Accueil</a> |
-                <a href="#">A propos</a> |
-                <a href="#">Portfolio</a> |
-                <a href="#">Contact</a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logoSite" href="index.html">
+                        Les Gros Bras
+                    </a>
+                </div>
+                <div class="navbar-text hidden-sm hidden-xs">
+                    <span>Besoin d'assistance ?</span>
+                    <a href="tel:01234567" id="contact_tel" title="Contactez-nous">01 23 45 67 89</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-nav-custom">
+                        <li class="active"><a href="index.html">Accueil<span class="sr-only">(current)</span></a></li>
+                        <li><a href="nosoffres.html">Nos Offres</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="contact.html">Je déménage</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    <!--MARK HERO BANNER-->
+    <section class="container-fluid banner">
+        <div class="container inner-banner">
+            <form action="contact.html" class="col-md-offset-3 col-md-6 formAccueil">
+                <div class="form-group">
+                    <label class="sr-only" for="depart">Adresse de départ</label>
+                    <label class="sr-only" for="arrivee">Adresse d'arrivée</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <input type="text" class="form-control" id="depart" placeholder="Adresse de départ">
+                        </div>
+                        <div class="input-group-addon">
+                            <input type="text" class="form-control" id="arrivee" placeholder="Adresse d'arrivée">
+                        </div>
+                    </div>
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='date' class="form-control" placeholder="Date de départ"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar" style="border-radius: 3px"></span>
+                        </span>
+                    </div>
+                </div>
+                <button class="btn btn-custom">Je déménage</button>
+            </form>
+        </div>
+    </section>
+    <!--MARK COMMENT CA MARCHE-->
+    <section class="container-fluid function">
+        <div class="row comment-ca-marche">
+            <h3 class="text-center">Comment ça marche ?</h3>
+            <hr class="separator2">
+        </div>
+        <div class="col-sm-3">
+            <div class="text-center">
+                <p>
+                    <img class="imghover img-responsive center-block" src="img/003-smartphone.png" alt="expertise">
+                </p>
+                <p>
+                    Nous évaluons votre <b>besoin</b> <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="text-center">
+                <p>
+                    <img class="imghover img-responsive center-block" src="img/002-laptop.png" alt="recherche">
+                </p>
+                <p>
+                    Vous choisissez <b>l'offre</b> qui vous convient
+
+                    <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="text-center">
+                <p>
+                    <img class="imghover img-responsive center-block" src="img/001-changing.png" alt="move">
+                </p>
+                <p>
+                    Vous remplissez<b> le formulaire en ligne </b> et vous serez appelés.
+                    <br>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="text-center">
+                <p>
+                    <img class="imghover img-responsive center-block" src="img/review.png" alt="Rating ">
+                </p>
+                <p>
+                    Vous laissez un
+                    <b>avis</b>
+                    sur notre service.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--MARK VALEURS-->
+    <section class="container-fluid usp">
+        <h2>Nos Valeurs</h2>
+        <hr class="separator1">
+        <div class="row inner-usp">
+            <div class="col-md-4 bordureJaune section1">
+                <img class="imgvaleur" src="img/medal.png" alt="quality">
+                <h3>Sécurité</h3>
+                <p>Garantie vol et casse<br>
+                    Données personnelles sécurisées<br>
+                    Assistance H24 en cas de panne
+                </p>
+            </div>
+
+            <div class="col-md-4 bordureJaune section2 ">
+                <img class="imgvaleur" src="img/dollar-symbol.png" alt="quality">
+                <h3>Qualité</h3>
+                <p>Sélection de devis sur mesure<br>
+                    Suivi qualité systématique<br>
+                    Professionnels certifiés<br>
+                    Matériaux écologiques et recyclables</p>
+            </div>
+
+            <div class="col-md-4 bordureJaune section3">
+                <img class="imgvaleur" src="img/heart.png" alt="quality">
+                <h3>Confiance</h3>
+                <p> Informations non divulguées à autrui<br>
+                Conseils personnalisés<br>
+                Aucun surcoût le jour du déménagement<br>
+                Réduction des retours à vide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--MARK FOOTER-->
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class=" col-md-offset-2 col-md-3 col-sm-2 col-xs-12">
+                <a href="mentionslegales.html" target="_blank" class="footerA"><h3 class="footcol">Mentions Légales</h3></a>
+            </div>
+            <div class=" col-md-2 col-sm-2 col-xs-12">
+                <a href="contact.html" class="footerA"><h3 class="footcol">Contact</h3></a>
+            </div>
+            <div class="soccol col-md-2 col-sm-2 col-xs-12">
+                <div class="container-fluid">
+                    <div class="col-md-4">
+                        <a href="http://facebook.com" class="sociallogo"><img src="img/facebook-letter-logo.svg" alt="Facebook Logo"></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="http://twitter.com"
+                           class="sociallogo"><img src="img/twitter-logo.svg" alt="Twitter Logo"></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="http://linkedin.com"
+                           class="sociallogo"><img src="img/linkedin-logo.svg" alt="LinkedIn Logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
