@@ -6,32 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--MARK HEADER-->
     <header class="container-fluid header">
-        <div class="container">
-            <a href="#" class="logo">Mon Site</a>
-            <div class="contact_container hidden-xs hidden-sm">
-                <p>
-                    <span>Besoin d'assistance ?</span><br>
-                    <a href="tel:01234567" id="contact_tel" title="Contactez-nous"><i class="uk-icon-phone"></i><span>01 23 45 67 89</span></a>
-                </p>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logoSite" href="#">
+                        Les Gros Bras
+                    </a>
+                </div>
+                <div class="navbar-text hidden-sm hidden-xs">
+                    <span>Besoin d'assistance ?</span>
+                    <a href="tel:01234567" id="contact_tel" title="Contactez-nous">01 23 45 67 89</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-nav-custom">
+                        <li class="active"><a href="#">Accueil<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Nos Offres</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <nav class="menu">
-                <a href="#">Accueil</a> |
-                <a href="#">Nos offres</a> |
-                <a href="#">À Propos</a> |
-                <a href="#">Contact</a>
-            </nav>
-        </div>
+        </nav>
+
+
+        <!--<div class="container">-->
+        <!--<div class="col-md-4">-->
+        <!--<a href="#" id="logoSite">Mon Site</a>-->
+        <!--</div>-->
+        <!--<div class="contact_container col-md-4 hidden-xs hidden-sm">-->
+        <!--<p>-->
+        <!--<span>Besoin d'assistance ?</span><br>-->
+        <!--<a href="tel:01234567" id="contact_tel" title="Contactez-nous"><span>01 23 45 67 89</span></a>-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--<nav class="menu">-->
+        <!--<a href="#">Accueil</a> |-->
+        <!--<a href="#">Nos offres</a> |-->
+        <!--<a href="#">À Propos</a> |-->
+        <!--<a href="#">Contact</a>-->
+        <!--</nav>-->
+        <!--</div>-->
     </header>
     <!--MARK HERO BANNER-->
     <section class="container-fluid banner">
         <div class="container inner-banner">
-            <form action="" class="">
+            <form action="" class="col-md-offset-4 col-md-4 formAccueil">
                 <div class="form-group">
                     <label class="sr-only" for="depart">Date de départ</label>
                     <label class="sr-only" for="arrivee">Date d'arrivée</label>
@@ -44,15 +77,16 @@
                         </div>
                     </div>
                     <div class='input-group date' id='datetimepicker1'>
-                        <input type='text' class="form-control"/>
+                        <input type='text' class="form-control" placeholder="Date de départ"/>
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
                     </div>
                 </div>
+                <button class="btn btn-custom">Je déménage</button>
             </form>
         </div>
-        <button class="btn btn-custom">Je déménage</button>
+
         </div>
     </section>
     <!--MARK COMMENT CA MARCHE-->
@@ -84,11 +118,30 @@
             </div>
         </div>
     </section>
-    <!--MARK PK NOUS-->
+    <!--MARK VALEURS-->
     <section class="container-fluid usp">
-        <div class="col-md-4 col-lg-4 col-xs-12"></div>
-        <div class="col-md-4 col-lg-4 col-xs-12"></div>
-        <div class="col-md-4 col-lg-4 col-xs-12"></div>
+        <h2>Nos Valeurs</h2>
+        <hr class="separator">
+        <div class="row">
+            <div class="col-md-4 bordureJaune section1">
+                <img class="imgvaleur" src="img/medal.png" alt="quality">
+                <h2>Sécurité</h2>
+                <p>Vos objets sont assurés</p>
+            </div>
+
+            <div class="col-md-4 bordureJaune section2 ">
+                <img class="imgvaleur" src="img/dollar-symbol.png" alt="quality">
+                <h2>Qualité</h2>
+                <p>Les matériaux utilisés sont de qualités, de même que pour nos
+                    déménageurs qui sont formés et expert dans la matière</p>
+            </div>
+
+            <div class="col-md-4 bordureJaune section3">
+                <img class="imgvaleur" src="img/heart.png" alt="quality">
+                <h2>Confiance</h2>
+                <p> Vos effigies personnels restent entre nous.</p>
+            </div>
+        </div>
     </section>
     <!--MARK FOOTER-->
     <footer class="container-fluid footer">
@@ -96,12 +149,6 @@
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker1').datetimepicker();
-        });
-    </script>
-
 
 </body>
 </html>

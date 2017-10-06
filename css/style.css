@@ -7,6 +7,15 @@ body {
     margin: 0;
 }
 
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
 /*********
 MARK GENERAL
 **********/
@@ -15,7 +24,6 @@ MARK GENERAL
     background-color: #3fbcff;
     width: 100%;
     max-width: 100%;
-    min-height: 100px;
 }
 
 .banner {
@@ -29,6 +37,7 @@ MARK GENERAL
      width: 100%;
      max-width: 100%;
     min-height: 100px;
+    text-align: center;
  }
 
 .usp {
@@ -36,6 +45,7 @@ MARK GENERAL
     width: 100%;
     max-width: 100%;
     min-height: 100px;
+    text-align: center;
 }
 
 .footer {
@@ -45,12 +55,76 @@ MARK GENERAL
     min-height: 100px;
 }
 
+hr.separator{
+     height: 3px;
+     width: 5%;
+     border: none;
+     box-shadow: none;
+     background-color: #349808;
+ }
+
+/*********
+MARK HEADER
+**********/
+
+.logoSite {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px !important;
+}
+
+.navbar-custom {
+    padding: 0 20px;
+}
+
+.navbar-nav-custom {
+    float: right;
+}
+
+.menu {
+    float: right;
+    color: orange;
+}
+
+.contact_container {
+    float: left;
+    line-height: 1;
+}
+
+/*----Nav Links----*/
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.header a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+/*----END----*/
+
 /*********
 MARK BANNER
 **********/
 
 .banner {
-    background: hotpink url("../img/ban.jpg") left center no-repeat;
+    background: hotpink url("https://drscdn.500px.org/photo/206806775/q%3D80_m%3D2000_k%3D1/v2?webp=true&sig=e0386cc0ce9ad0054e6264b711ded6efff52e3be5e8b7c984bd278c78391e6ff") left center no-repeat;
     height: 500px;
     text-align: center;
 }
+
+.formAccueil {
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 768px){
+    .navbar-nav-custom {
+        float: left;
+        /*width: 100%;*/
+        text-align: center;
+    }
+}
+
