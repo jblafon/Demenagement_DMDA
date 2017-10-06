@@ -1,85 +1,143 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/css/about.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/freelancer.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Inscription</title>
 
 </head>
 
 <body>
 
-<!-- header -->
+    <!-- header -->
 
-<!-- formulaire -->
+    <!-- formulaire -->
 
-
-
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <!--MARK HEADER-->
+    <header class="container-fluid header">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logoSite" href="index.html">
+                        Les Gros Bras
+                    </a>
+                </div>
+                <div class="navbar-text hidden-sm hidden-xs">
+                    <span>Besoin d'assistance ?</span>
+                    <a href="tel:01234567" id="contact_tel" title="Contactez-nous">01 23 45 67 89</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-nav-custom">
+                        <li><a href="index.html">Accueil<span class="sr-only">(current)</span></a></li>
+                        <li><a href="nosoffres.html">Nos Offres</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li class="active"><a href="contact.html">Je déménage</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<section>
     <div id="login-overlay" class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel">Vos devis déménagement</h4>
-          </div>
-          <div class="modal-body">
-              <div class="row">
-                  <div class="col-xs-6">
-                      <div class="well">
-                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
-                              <div class="form-group">
-                                  <label for="username" class="control-label">Nom</label>
-                                  <input type="text" class="form-control" id="username" title="Please enter you username">
-                                  <span class="help-block"></span>
-                              </div>
-                               <div class="form-group">
-                                  <label for="username" class="control-label">Prénom</label>
-                                  <input type="text" class="form-control" id="username" name="username" title="Please enter you username">
-                                  <span class="help-block"></span>
-                              </div>
-                              <div class="form-group">
-                                  <label for="username" class="control-label">Email</label>
-                                  <input type="email" class="form-control" id="username" name="username"title="Please enter you username">
-                                  <span class="help-block"></span>
-                              </div>
-                              <div class="form-group">
-                                  <label for="password" class="control-label">Téléphone</label>
-                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
-                                  <span class="help-block"></span>
-                              </div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Vos devis déménagement</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="well">
+                            <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
                                 <div class="form-group">
-			                    <label for="AddressLine1">Adresse de départ</label>
-                   				 <input type="text" class="form-control" id="AddressLine1" required="">
-                				</div>
-								<div class="form-group">
-			                    <label for="AddressLine1">Adresse d'arrivée</label>
-                   				 <input type="text" class="form-control" id="AddressLine1" required="">
-                				</div>
-                              <button type="submit" class="btn btn-success btn-block">Envoyer mon devis</button>
+                                    <label for="username" class="control-label">Nom</label>
+                                    <input type="text" class="form-control" id="username" title="Please enter you username">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="username" class="control-label">Prénom</label>
+                                    <input type="text" class="form-control" id="username" name="username"
+                                           title="Please enter you username">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="username" class="control-label">Email</label>
+                                    <input type="email" class="form-control" id="username" name="username"
+                                           title="Please enter you username">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Téléphone</label>
+                                    <input type="password" class="form-control" id="password" name="password" value=""
+                                           required="" title="Please enter your password">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="AddressLine1">Adresse de départ</label>
+                                    <input type="text" class="form-control" id="AddressLine1" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="AddressLine1">Adresse d'arrivée</label>
+                                    <input type="text" class="form-control" id="AddressLine1" required="">
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Envoyer mon devis</button>
 
-                          </form>
-                      </div>
-                  </div>
-                  <div class="col-xs-6">
-                      <p class="lead">Devis gratuit et <span class="text-success">personnalisé</span></p>
-                      <ul class="list-unstyled" style="line-height: 2">
-                          <li><span class="fa fa-check text-success"></span> Gratuit & sans engagement</li>
-                          <li><span class="fa fa-check text-success"></span> Une demande = 3 à 5 devis</li>
-                          <li><span class="fa fa-check text-success"></span> Unique interlocuteur</li>
-                          <li><span class="fa fa-check text-success"></span> Sélection de déménageurs qualifiés</li>
-                      </ul>
-                      <p><a href="/new-customer/" class="btn btn-info btn-block">Demander votre devis maintenant !</a></p>
-                     <img class="imgvaleur" src="bootstrap/img/thumbs-up.png" alt="quality" width="200">
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-6" style="text-align: center">
+                        <p class="lead">Devis gratuit et <span class="text-success">personnalisé</span></p>
+                        <ul class="list-unstyled" style="line-height: 2">
+                            <li><span class="fa fa-check text-success"></span> Gratuit & sans engagement</li>
+                            <li><span class="fa fa-check text-success"></span> Une demande = 3 à 5 devis</li>
+                            <li><span class="fa fa-check text-success"></span> Unique interlocuteur</li>
+                            <li><span class="fa fa-check text-success"></span> Sélection de déménageurs qualifiés</li>
+                        </ul>
+                        <p><a href="/new-customer/" class="btn btn-info btn-block">Demander votre devis maintenant !</a></p>
+                        <img class="imgvaleur" src="img/thumbs-up.png" alt="quality" width="200">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--MARK FOOTER-->
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class=" col-md-offset-2 col-md-3 col-sm-2 col-xs-12">
+                <a href="mentionslegales.html" target="_blank" class="footerA"><h3 class="footcol">Mentions Légales</h3></a>
+            </div>
+            <div class=" col-md-2 col-sm-2 col-xs-12">
+                <a href="contact.html" class="footerA"><h3 class="footcol">Contact</h3></a>
+            </div>
+            <div class="soccol col-md-2 col-sm-2 col-xs-12">
+                <div class="container-fluid">
+                    <div class="col-md-4">
+                        <a href="http://facebook.com" class="sociallogo"><img src="img/facebook-letter-logo.svg" alt="Facebook Logo"></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="http://twitter.com"
+                           class="sociallogo"><img src="img/twitter-logo.svg" alt="Twitter Logo"></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="http://linkedin.com"
+                           class="sociallogo"><img src="img/linkedin-logo.svg" alt="LinkedIn Logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 
-  </body>
-
-  </html>
+</html>
