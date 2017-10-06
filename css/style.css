@@ -33,7 +33,7 @@ MARK GENERAL
 }
 
 .function {
-     background-color: #1b6d85;
+     background-color: #909CC2;
      width: 100%;
      max-width: 100%;
     min-height: 100px;
@@ -41,7 +41,7 @@ MARK GENERAL
  }
 
 .usp {
-    background-color: #3fbcff;
+    background-color: #F7F5FB;
     width: 100%;
     max-width: 100%;
     min-height: 100px;
@@ -60,7 +60,7 @@ hr.separator{
      width: 5%;
      border: none;
      box-shadow: none;
-     background-color: #349808;
+     background-color: #b1b1b1;
  }
 
 /*********
@@ -93,6 +93,7 @@ MARK HEADER
 }
 
 /*----Nav Links----*/
+/*
 .header a {
     color: white;
     text-decoration: none;
@@ -103,7 +104,7 @@ MARK HEADER
     color: orange;
     text-decoration: none;
 }
-
+*/
 /*----END----*/
 
 /*********
@@ -111,13 +112,26 @@ MARK BANNER
 **********/
 
 .banner {
-    background: hotpink url("https://drscdn.500px.org/photo/206806775/q%3D80_m%3D2000_k%3D1/v2?webp=true&sig=e0386cc0ce9ad0054e6264b711ded6efff52e3be5e8b7c984bd278c78391e6ff") left center no-repeat;
-    height: 500px;
+    background: cornflowerblue url("https://drscdn.500px.org/photo/206806775/q%3D80_m%3D2000_k%3D1/v2?webp=true&sig=e0386cc0ce9ad0054e6264b711ded6efff52e3be5e8b7c984bd278c78391e6ff") center center no-repeat;
+    height: 700px;
     text-align: center;
 }
 
 .formAccueil {
     margin-top: 20%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.btn-custom {
+    background-color: #18BC9C;
+    color: white;
+}
+
+.btn-custom:hover{
+    background-color: #2C3F51;
+    color: white;
 }
 
 @media screen and (max-width: 768px){
@@ -126,5 +140,21 @@ MARK BANNER
         /*width: 100%;*/
         text-align: center;
     }
+
+    .formAccueil {
+        margin-top: 70%;
+        background-color: rgba(0,0,0,0.5);
+        padding: 20px;
+        border-radius: 5px;
+    }
+}
+
+/*********
+MARK USP
+**********/
+
+.inner-usp {
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
